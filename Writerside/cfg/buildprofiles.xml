@@ -1,0 +1,14 @@
+<buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <variables>
+        <header-logo/>
+    </variables>
+    <build-profile instance="instance_id"/>
+    <footer>
+        <copyright>2023 Yuay</copyright>
+        <social type="blog" href="https://rakugaki.cn/about"/>
+        <social type="email" href="yuay@yuay.ac.cn"/>
+        <link href="https://gdadmn.yuay.ac.cn">GDADMN</link>
+        <link href="https://github.com/YuayYeonhi/">Github</link>
+    </footer>
+</buildprofiles>
