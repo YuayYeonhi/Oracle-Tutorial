@@ -1,10 +1,9 @@
 name: Build documentation
 
 on:
-# If specified, the workflow will be triggered automatically once you push to the `main` branch.
-# Replace `main` with your branch’s name
+# If specified, the workflow will be triggered automatically once you push to the `master` branch.
     push:
-        branches: ["main"]
+        branches: ["master"]
 # Specify to run a workflow manually from the Actions tab on GitHub
     workflow_dispatch:
 
