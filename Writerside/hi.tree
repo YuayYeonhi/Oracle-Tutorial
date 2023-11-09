@@ -7,8 +7,11 @@
                  start-page="Oracle.md">
 
     <toc-element topic="Oracle.md"/>
-    <toc-element topic="Introduction-to-Oracle-Database.md"/>
+    <toc-element toc-title="Getting started">
+        <toc-element topic="Introduction-to-Oracle-Database.md"/>
+    </toc-element>
     <toc-element topic="DDL.md"/>
     <toc-element topic="Select-Statement.md"/>
     <toc-element topic="Select-Statement-2.md"/>
+    <toc-element href="https://docs.oracle.com/en/database/oracle/oracle-database/index.html" toc-title="Oracle Database Documentation"/>
 </instance-profile>
