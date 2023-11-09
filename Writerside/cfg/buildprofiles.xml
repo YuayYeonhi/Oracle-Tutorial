@@ -1,7 +1,9 @@
 <buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <variables>
-        <header-logo/>
+        <header-logo>favicon-180.png</header-logo>
+        <primary-color>halloween</primary-color>
+        <color-preset>Vivid</color-preset>
     </variables>
     <build-profile instance="instance_id"/>
     <footer>
