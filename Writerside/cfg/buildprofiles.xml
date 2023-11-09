@@ -2,7 +2,7 @@
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <variables>
         <header-logo>favicon-180.png</header-logo>
-        <primary-color>halloween</primary-color>
+        <primary-color>dracula</primary-color>
         <color-preset>Vivid</color-preset>
     </variables>
     <build-profile instance="instance_id"/>
