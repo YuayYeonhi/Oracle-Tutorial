@@ -120,4 +120,17 @@ where to_char(dob,'mm')=2;
 select sysdate,sysdate-to_date('2020-10-2 0:0:0','yyyy-mm-dd hh24:mi:ss') Duartion
 from dual;
 ```
+### regexp_like
 
+### count/sum/avg/max/min/median
+
+## Group by Clause/Having Clause
+###  Column must appear in the GROUP BY clause or be used in an aggregate function. 
+
+### ORA-00937: not a single-group group function 
+Cause: You tried to execute a SELECT statement that included a GROUP BY function (ie: MIN Function, MAX Function, SUM Function, COUNT Function), but was missing the GROUP BY clause.
+
+### ORA-00934: group function is not allowed here
+Cause: You tried to execute a SQL statement that included one of the group functions (ie: MIN Function, MAX Function, SUM Function, COUNT Function) in either the WHERE clause or the GROUP BY clause.
+
+### Group by Clause and Having Clause 

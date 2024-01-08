@@ -13,5 +13,8 @@
     <toc-element topic="DDL.md"/>
     <toc-element topic="Select-Statement.md"/>
     <toc-element topic="Select-Statement-2.md"/>
+    <toc-element topic="Subquery-DML.md"/>
+    <toc-element topic="Anonymous-blocks.md"/>
+    <toc-element topic="Cursor.md"/>
     <toc-element href="https://docs.oracle.com/en/database/oracle/oracle-database/index.html" toc-title="Oracle Database Documentation"/>
 </instance-profile>
