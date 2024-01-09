@@ -2,22 +2,22 @@
 
 ## 1. PL/SQL: Procedural Language/Structured Query Language
 ## 2. Code Structure 
-    ```SQL
-         [Declare] 
-         --Variable & Cursor Definition 
-         Begin
-         --Main body, includes SQL and PL/SQL
-         [Exception]
-         --Exception Handling
-         End;
-         /
-    ```
+ ```SQL
+      [Declare] 
+      --Variable & Cursor Definition 
+      Begin
+      --Main body, includes SQL and PL/SQL
+      [Exception]
+      --Exception Handling
+      End;
+      /
+ ```
 ## 3. Anonymous blocks
 
    ### (1)Set serveroutput on before running an anonymous block.
-    ```SQL
-    set serveroutput on
-    ```
+ ```SQL
+ set serveroutput on
+ ```
    ### (2)dbms_output.put_line
    ```SQL
       begin
