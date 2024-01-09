@@ -113,3 +113,84 @@ Tank War 13.95
 The `SELECT FOR UPDATE` statement allows you to lock the records in the cursor result set.
 You are not required to make changes to the records in order to use this statement. The
 record locks are released when the next commit or rollback statement is issued. 
+
+_Syntax_
+```SQL
+CURSOR cursor_name 
+IS 
+    select_statement 
+    FOR UPDATE [OF column_list] [NOWAIT];
+```
+_Parameters or Arguments_
+`column_list`
+The columns in the cursor result set that you wish to update.
+`NOWAIT`
+Optional. The cursor does not wait for resources.
+
+_Example_
+```SQL
+cursor c_product is 
+    select price 
+    from products 
+    where product_type_id=1 
+    for update; 
+```
+
+## 4. WHERE CURRENT OF Statement
+If you plan on updating or deleting records that have been referenced by a `SELECT FOR
+UPDATE` statement, you can use the WHERE CURRENT OF statement.
+
+_Syntax_
+
+The syntax for the `WHERE CURRENT OF` statement in Oracle/PLSQL is either:
+```SQL
+UPDATE table_name 
+    SET set_clause 
+    WHERE CURRENT OF cursor_name; 
+```
+OR
+```SQL
+DELETE FROM table_name 
+WHERE CURRENT OF cursor_name; 
+```
+<note>The WHERE CURRENT OF statement allows you to update or delete the record that was last 
+fetched by the cursor. </note>
+
+_Example_
+```SQL
+declare 
+    cursor c_products is 
+        select price 
+        from products 
+        where product_type_id=1 
+        for update; 
+begin
+    for r_products in c_products loop 
+        update products 
+        set price=r_products.price*2 
+        where current of c_products; 
+    end loop; 
+end; 
+/ 
+```
+
+## 5. Update/Delete by RowID
+If you plan on updating or deleting records that have been referenced by a SELECT statement,
+you can use the RowID pseudo-column.
+
+_Syntax_
+```SQL
+declare 
+    cursor c_products is 
+        select rowid,price 
+        from products 
+        where product_type_id=1; 
+begin 
+    for r_products in c_products loop 
+        update products 
+        set price=r_products.price*2 
+        where rowid=r_products.rowid; 
+    end loop; 
+end; 
+/
+```

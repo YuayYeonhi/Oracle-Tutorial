@@ -16,5 +16,9 @@
     <toc-element topic="Subquery-DML.md"/>
     <toc-element topic="Anonymous-blocks.md"/>
     <toc-element topic="Cursor.md"/>
+    <toc-element topic="Procedure.md"/>
+    <toc-element topic="Function.md"/>
+    <toc-element topic="Trigger.md"/>
+    <toc-element href="https://docs.qq.com/slide/DUm5KTkVMbVJPbWFn" toc-title="Oracle Database DBA"/>
     <toc-element href="https://docs.oracle.com/en/database/oracle/oracle-database/index.html" toc-title="Oracle Database Documentation"/>
 </instance-profile>
